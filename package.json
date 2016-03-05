@@ -1,13 +1,10 @@
 {
-  "name": "{{ name }}",
-  "description": "{{ description }}",
-  "author": "{{ author }}",
-  {{#private}}
-  "private": true,
-  {{/private}}
+  "name": "simpler-vue-webpack-boilerplate",
+  "description": "Simpler Vue/Webpack Boilerplate",
+  "author": "foxxyz",
   "scripts": {
-    "dev": "webpack-dev-server --inline --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "dev": "webpack-dev-server --inline --hot --host 0.0.0.0",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules && cp src/*.html public/"
   },
   "dependencies": {
     "vue": "^1.0.0"
@@ -23,6 +20,8 @@
     "css-loader": "^0.23.0",
     "file-loader": "^0.8.4",
     "json-loader": "^0.5.4",
+    "node-sass": "^3.4.2",
+    "sass-loader": "^3.1.2",
     "url-loader": "^0.5.7",
     "vue-hot-reload-api": "^1.2.0",
     "vue-html-loader": "^1.0.0",

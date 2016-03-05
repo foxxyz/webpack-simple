@@ -1,31 +1,25 @@
-# vue-webpack-simple-boilerplate
+vue-webpack-simpler-boilerplate
+===============================
 
-> A simple Webpack setup for `vue-loader` for quick prototyping.
+A fork of [Vue's Official Simple Webpack Boilerplate](https://github.com/vuejs-templates/webpack-simple) with better defaults:
+ * Included SASS loader
+ * 4-space tabs
+ * html files in `src`
+ * using `public` instead of `dist` for building
 
-### Usage
+Installing
+----------
 
-This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
+ 1. Clone
+ 2. Install dependencies: `npm install`
 
-``` bash
-$ npm install -g vue-cli
-$ vue init webpack-simple my-project
-$ cd my-project
-$ npm install
-$ npm run dev
-```
+Usage
+-----
 
-### What's Included
+ 1. Serve with hot reload: `npm run dev`
+ 2. Open [localhost:8080](http://localhost:8080)
 
-- `npm run dev`: Webpack + `vue-loader` with proper config for source maps & hot-reload.
+Deployment
+----------
 
-- `npm run build`: Production build with HTML/CSS/JS minification.
-
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
-
-### Fork It And Make Your Own
-
-You can fork this repo to create your own boilerplate, and use it with `vue-cli`:
-
-``` bash
-vue init username/repo my-project
-```
+ 1. Build to `public` folder with minification: `npm run build`
