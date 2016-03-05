@@ -19,12 +19,17 @@ export default {
 </script>
 
 <style lang="sass">
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
+    background-color: #fff;
+    color: #000;
     font-family: Helvetica, sans-serif;
 
     h1 {
-        color: #fff;
-        background: #000;
+        text-decoration: underline;
     }
 }
 </style>
